@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrayerTimingsScreen">
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Timings"
+        android:textColor="@color/purple_700"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@android:dimen/notification_large_icon_width" />
+
+    <TextView
+        android:id="@+id/txtFajr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/txtDhuhr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/txtFajr"
+        android:background="@drawable/back"/>
+    <TextView
+        android:id="@+id/txtAsr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/txtDhuhr"
+        android:background="@drawable/back"/>
+    <TextView
+        android:id="@+id/txtMaghrib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/txtAsr"
+        android:background="@drawable/back"/>
+    <TextView
+        android:id="@+id/txtIsha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/txtMaghrib"
+        android:background="@drawable/back"/>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP ALARM"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/txtIsha"
+        android:onClick="stopAlarm"/>
+
+</RelativeLayout>
